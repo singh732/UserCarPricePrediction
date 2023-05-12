@@ -1,0 +1,215 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-car-theme {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../public/amg.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+}
+
+.image-text {
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.title-heading {
+  color: #5BAD5D;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 26px;
+}
+
+.sub-heading {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 26px;
+}
+
+.predict-upper-button{
+  margin-top: 30px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+
+  color: #130f40;
+  background-color: #d9eb3d;
+  border-color: #ccc;
+}
+
+.predict-input-tile{
+  position: relative;
+  top: 60vh;
+  background-color: #3e6274;
+  display: inline-block;
+  min-width: 80%;
+}
+
+.title-head {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 30px;
+}
+.input-grids{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-table{
+  align-self: center;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.input-element {
+  height: 30px;
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+}
+
+td {
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;   
+}
+
+.predict-lower-button{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+
+  color: #130f40;
+  background-color: #d9eb3d;
+  border-color: #ccc;
+  width: 50%;
+}
+
+
+p img {
+  max-width: 200px;
+  height: auto;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.react-dropdown-select-content:first-child{
+  color: white;
+}
+
+.changePlaceHolder::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid silver;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin-left: 40%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
